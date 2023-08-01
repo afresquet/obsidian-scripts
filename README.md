@@ -61,7 +61,7 @@ function createRenderDate(dv, moment) {
   }
 }
 
-exports.createLibrary = createLibrary;
+exports.createRenderDate = createRenderDate;
 ```
 
 The reason we need to inject this dependencies is because those globals aren't injected into our code afaik. If this is improvable I'd love to change that.
