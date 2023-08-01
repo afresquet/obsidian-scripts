@@ -18,7 +18,7 @@ This also means we are able to open the scripts folder in an editor and use JSDo
 
 In this repo there's a `types` folder to store TypeScript declaration files (`.d.ts`) for library declarations (like `momentjs`) and for your own types.
 
-For some libraries you might find already existing declaration files, but for the `dv` object I had to clone the Dataview repo, build from source with [changed configurations for tsconfig.json](https://stackoverflow.com/a/73416945), and then copy the generated types to use them (there's garbage that isn't needed too but removing it is work).
+For some libraries you might find already existing declaration files, but for the `dv` object I had to clone the [Dataview repo](https://github.com/blacksmithgu/obsidian-dataview), build from source with [changed configurations for tsconfig.json](https://stackoverflow.com/a/73416945), and then copy the generated types to use them (there's garbage that isn't needed too but removing it is work).
 
 Then we make a JavaScript file, import said declarations, and make a factory function to inject dependencies:
 
