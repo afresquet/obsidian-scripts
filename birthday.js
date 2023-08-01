@@ -1,6 +1,8 @@
 // @ts-check
 
 /**
+ * @typedef {import("./types/dataview/api/inline-api").DataviewInlineApi} DataviewInlineApi
+ *
  * @typedef {import("./types/moment")} moment
  * @typedef {import("./types/moment").Moment} Moment
  *
@@ -8,7 +10,7 @@
  */
 
 /**
- * @param {any} dv
+ * @param {DataviewInlineApi} dv
  * @param {moment} moment
  * @returns {(title: string, start: Moment, end: Moment) => void}
  */
@@ -54,7 +56,6 @@ function createDrawBirthdays(dv, moment) {
    * @param {Moment} end
    */
   return function drawBirthdays(title, start, end) {
-    /** @type {Person[]} */
     const birthdays = dv.pages('"people"').filter(filterBirthday(start, end));
 
     if (birthdays.length === 0) return;
