@@ -2,9 +2,8 @@
 
 /**
  * @typedef {import("./types/dataview/api/inline-api").DataviewInlineApi} DataviewInlineApi
- *
  * @typedef {import("./types/moment")} moment
- * @typedef {import("./types/moment").Moment} Moment
+ * @typedef {ReturnType<moment>} Moment
  *
  * @typedef {import("./types/person").Person} Person
  */

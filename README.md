@@ -29,10 +29,8 @@ Then we make a JavaScript file, import said declarations, and make a factory fun
 
 /**
  * @typedef {import("./types/dataview/api/inline-api").DataviewInlineApi} DataviewInlineApi
- *
  * @typedef {import("./types/moment")} moment
- * @typedef {import("./types/moment").Moment} Moment
- * // Note that I manually exported this namespace in the declaration file, it's not exported by default.
+ * @typedef {ReturnType<moment>} Moment
  *
  * @typedef {import("./types/custom").Custom} Custom
  */
